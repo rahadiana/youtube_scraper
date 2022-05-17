@@ -18,8 +18,6 @@
   "license": "GPL-2.0-only",
   "dependencies": {
     "axios": "^0.27.2",
-    "json-concat": "^0.0.1",
-    "json-files-merger": "^2.0.0",
     "puppeteer": "^14.1.0",
     "uniqid": "^5.4.0"
   }

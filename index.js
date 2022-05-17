@@ -4,19 +4,35 @@ const {
 } = require('./helper/Request');
 
 const {
-    Parser, FindComment
+    Parser, FindComment, UPloadCh
 } = require('./helper/Parser');
 
 
-FindComment("yPy88Nk_Ytk")
+function Search(){
 
-// Request('xiaomi','1y')
-// .then(function (response) {
+  Request('puppeteer','1m')
+  .then(function (response) {
+ 
+      const data = response.data
+     
+    console.log(Parser(data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
-//     const data = response.data
-    
-//   console.log(Parser(data));
-// })
-// .catch(function (error) {
-//   console.log(error);
-// });
+}
+
+
+
+//for find comment video using video ID  #uncomment
+//FindComment("yPy88Nk_Ytk")
+
+
+//for find upload from channel #uncomment
+//UPloadCh("https://www.youtube.com/c/BelajarIT")
+
+
+
+//for search video #uncomment
+//Search()

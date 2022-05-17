@@ -79,7 +79,7 @@ const FindComment = function(VidId) {
               const biugu9oh = iuguig - val
               if (biugu9oh == 0) {
                   await page.waitForTimeout(8000);
-                  console.log(`all JSON saved at storage/${UserInput}/`)
+                  console.log(`all JSON saved at storage/VideoComments/${UserInput}/`)
                   process.exit()
               }
           }
@@ -158,7 +158,7 @@ const FindComment = function(VidId) {
                       const params = new URLSearchParams(url.search.slice(1));
                       const QueryToFiles = params.get('v')
                       const Isinya = JSON.stringify(await saveItem)
-                      const dir = 'storage/' + QueryToFiles;
+                      const dir = 'storage/VideoComments/' + QueryToFiles;
 
                       var items = [254, 45, 212, 365, 2543];
 
@@ -172,7 +172,7 @@ const FindComment = function(VidId) {
                       }
 
                       if (Isinya !== undefined) {
-                          fs.writeFile('storage/' + QueryToFiles + '/' + 'tmp_' + TimeNya + '_' + QueryToFiles + '.json', Isinya, function(err) {
+                          fs.writeFile('storage/VideoComments/' + QueryToFiles + '/' + 'tmp_' + TimeNya + '_' + QueryToFiles + '.json', Isinya, function(err) {
                               if (err) throw err;
                           });
                       }

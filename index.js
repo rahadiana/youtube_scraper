@@ -10,7 +10,7 @@ const {
 
 function Search(){
 
-  Request('puppeteer','1m')
+  Request('berita','1w')
   .then(function (response) {
  
       const data = response.data
@@ -26,7 +26,7 @@ function Search(){
 
 
 //for find comment video using video ID  #uncomment
-//FindComment("nNotxnXobfc")
+//FindComment("wsZFPns6DlE")
 
 
 //for find upload from channel #uncomment

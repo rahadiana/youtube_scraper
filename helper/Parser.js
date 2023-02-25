@@ -54,7 +54,7 @@ const FindComment = function(VidId) {
         const fullUrl = BaseUrl + VideoId;
         (async () => {
             const browser = await puppeteer.launch({
-                headless: 1
+                headless: 0
             });
             const page = await browser.newPage();
             await page.goto(fullUrl, );
@@ -213,7 +213,7 @@ const UPloadCh = function(VidId) {
 
         (async () => {
             const browser = await puppeteer.launch({
-                headless: 1
+                headless: 0
             });
             const page = await browser.newPage();
             await page.goto(fullUrl, );
@@ -263,7 +263,7 @@ const UPloadCh = function(VidId) {
                         const arrads = objasd;
                         const results = arrads.map(d => {
                             //cv means Comment Variable    
-                            const cv = d.gridVideoRenderer
+                            const cv = d.richItemRenderer.content.videoRenderer
 
                             if (cv.videoId == undefined) {
                                 //return []

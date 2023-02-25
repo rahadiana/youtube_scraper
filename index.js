@@ -10,7 +10,7 @@ const {
 
 function Search(){
 
-  Request('berita','1w')
+  Request('camat bekasi timur','1w')
   .then(function (response) {
  
       const data = response.data
@@ -29,10 +29,10 @@ function Search(){
 //FindComment("wsZFPns6DlE")
 
 
-//for find upload from channel #uncomment
-//UPloadCh("https://www.youtube.com/c/BelajarIT")
+// for find upload from channel #uncomment
+// UPloadCh("https://www.youtube.com/c/@ProgrammerZamanNow")
 
 
 
 //for search video #uncomment
-//Search()
+Search()

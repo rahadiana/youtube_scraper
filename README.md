@@ -1,6 +1,9 @@
 
 # youtube scraper
 
+
+#nothing to maintain
+
 Easy scrape youtube data include sentiment analysis in **BAHASA**
 
 
